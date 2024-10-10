@@ -26,7 +26,7 @@ export default function Footer() {
           <nav className="list-none mb-10 flex gap-4 flex-col">
             {
               learn.map((item, index) => (
-                <li>{item.name}</li>
+                <li key={index}>{item.name}</li>
               ))
             }
           </nav>
@@ -36,7 +36,7 @@ export default function Footer() {
           <nav className="list-none mb-10 flex gap-4 flex-col">
             {
               company.map((item, index) => (
-                <li>{item.name}</li>
+                <li key={index}>{item.name}</li>
               ))
             }
           </nav>
